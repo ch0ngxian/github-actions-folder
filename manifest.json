@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Github Actions Folder",
+  "version": "0.0.1",
+  "description": "Increase Github Actions's readability by folder grouping supprt",
+  "icons": {
+    "16": "assets/images/icon16.png",
+    "32": "assets/images/icon32.png",
+    "48": "assets/images/icon48.png",
+    "128": "assets/images/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/actions*"],
+      "js": ["content.js"]
+    }
+  ]
+}
